@@ -9,7 +9,8 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Res
 @Configuration
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
-	private static final String[] AUTH_WHITELIST = { "/swagger-resources/**", "/swagger-ui.html", "/app/home/**" };
+	private static final String[] AUTH_WHITELIST = {"/v2/api-docs", "/webjars/**", "/swagger-resources/**", 
+			"/swagger-ui.html", "/app/home/**", "/app/login/**" };
 
 	@Override
 	public void configure(HttpSecurity http) throws Exception {

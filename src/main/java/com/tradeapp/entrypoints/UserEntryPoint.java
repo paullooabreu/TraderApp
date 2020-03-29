@@ -14,7 +14,7 @@ import com.tradeapp.entrypoints.mapper.UserHttpModelMapper;
 import com.tradeapp.entrypoints.model.UserHttpModel;
 
 @RestController
-@RequestMapping("/app/home")
+@RequestMapping("/app/login")
 public class UserEntryPoint {
 
 	@Autowired
@@ -23,7 +23,7 @@ public class UserEntryPoint {
 	@Autowired
 	CreateUserUseCase createUserUserCase;
 
-	@PostMapping(path = "/user")
+	@PostMapping(path = "/createUser")
 	public ResponseEntity<UserHttpModel> createUser(@RequestBody UserHttpModel userHttpModel) {
 
 		UserEntity userEntity = createUserUserCase.createUser(mapper.to(userHttpModel));
