@@ -13,6 +13,9 @@ import com.tradeapp.core.usecase.CreateUserUseCase;
 import com.tradeapp.entrypoints.mapper.UserHttpModelMapper;
 import com.tradeapp.entrypoints.model.UserHttpModel;
 
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+
 @RestController
 @RequestMapping("/app/login")
 public class UserEntryPoint {
@@ -23,6 +26,8 @@ public class UserEntryPoint {
 	@Autowired
 	CreateUserUseCase createUserUserCase;
 
+	@ApiOperation(value = "Cria um novo usuário")
+	@ApiResponse(code = 201, message = "Usuario criado com sucesso")
 	@PostMapping(path = "/createUser")
 	public ResponseEntity<UserHttpModel> createUser(@RequestBody UserHttpModel userHttpModel) {
 

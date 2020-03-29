@@ -4,7 +4,6 @@ import org.springframework.stereotype.Component;
 
 import com.tradeapp.core.model.UserEntity;
 import com.tradeapp.dataproviders.models.UserTable;
-import com.tradeapp.entrypoints.model.UserTypeTableMapper;
 import com.tradeapp.service.util.mapper.FromToMapper;
 
 @Component

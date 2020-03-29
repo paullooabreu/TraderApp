@@ -1,4 +1,4 @@
-package com.tradeapp.entrypoints.model;
+package com.tradeapp.dataproviders.mapper;
 
 import java.util.Optional;
 

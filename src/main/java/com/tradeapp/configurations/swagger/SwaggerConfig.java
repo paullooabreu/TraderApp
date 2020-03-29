@@ -1,4 +1,4 @@
-package com.tradeapp.configurations.swegger;
+package com.tradeapp.configurations.swagger;
 
 import java.util.ArrayList;
 import java.util.Arrays;
