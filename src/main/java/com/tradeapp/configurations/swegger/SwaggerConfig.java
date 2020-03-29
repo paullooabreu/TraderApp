@@ -76,7 +76,7 @@ public class SwaggerConfig {
 	    private SecurityContext securityContext() {
 	        return SecurityContext.builder()
 	            .securityReferences(defaultAuth())
-	            .forPaths(PathSelectors.ant("/app/Logged/**"))
+	            .forPaths(PathSelectors.ant("/app/logged/**"))
 	            .build();
 	    }
 	    
